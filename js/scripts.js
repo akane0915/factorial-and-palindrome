@@ -16,25 +16,26 @@ $(document).ready(function(){
   })
 
   // Palindrome Section
-  $("#palidrome").submit(function(event){
+  $("#palindrome").submit(function(event){
     event.preventDefault();
 
     var palInput = $("#palInput").val().toLowerCase();
-    var reversePal = "";
 
     function reverseString(str){
+      var reverseStr = "";
       for(var i = str.length - 1; i >= 0; i--){
-        reversePal += str[i];
+        reverseStr += str[i];
       }
-      return reversePal;
+      return reverseStr;
     }
-    console.log(reverseString(palInput));
-    // if(palInput === reversePal){
-    //   alert
-    // }else{
-    //
-    // }
 
+    var reversePal = reverseString(palInput);
+    console.log(reversePal);
+
+    if(palInput === reversePal){
+      $("#palindrome-output").text(palInput + " is a palindrome");
+    }else{
+      $("#palindrome-output").text(palInput + " is NOT a palindrome");
+    }
   });
-
 });
