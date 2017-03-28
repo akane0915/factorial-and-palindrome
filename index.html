@@ -2,21 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Factorials</title>
+    <title>Factorials & Palindrome</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8" type="text/css">
     <script src="js/jquery-3.2.0.js" charset="utf-8"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
   </head>
   <body>
+    <!-- Factorial Section -->
     <div class="container">
       <h1>Factorial Fun</h1>
-      <form>
+      <form id="factorial">
         <p>Input a number to calculate the factorial!</p>
         <input id="numberInput" type="number">
         <button class="btn btn-default" type="submit">Calculate!</button>
       </form>
-      <div id="output">
+      <div id="factorial-output">
+      </div>
+    </div>
+
+    <!-- Palindromes -->
+    <div class="container">
+      <h1>Palidromes</h1>
+      <form id="palidrome">
+        <p>Type your potential palindrome:</p>
+        <input id="palInput" type="text">
+        <button class="btn btn-default" type="submit">Check it</button>
+      </form>
+      <div id="palindrome-output">
       </div>
     </div>
   </body>
